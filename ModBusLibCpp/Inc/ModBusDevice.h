@@ -28,7 +28,7 @@ typedef enum{
 
 
 typedef enum {
-	READ_COILs = 			0x01,
+	READ_COILs = 					0x01,
 	READ_DISC_INPUTs =		0x02,
 	READ_HOLDING_REGs = 	0x03,
 	READ_INPUT_REGs = 		0x04,
@@ -41,7 +41,7 @@ typedef enum {
 
 typedef enum {
 	ILEGAL_FUCTION 	=   	0x01,
-	ILLEGAL_DATA_ADDRESS=   0x02,
+	ILLEGAL_DATA_ADDRESS= 0x02,
 	ILLEGAL_DATA_VALUE = 	0x03
 } modbusExceptionCode;
 

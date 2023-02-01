@@ -143,7 +143,7 @@ void ModBusDevice::extractBinaryReceivedData(uint8_t len, uint8_t *receivedData,
 ModBusResult ModBusDevice::sendModBusRequest(uint8_t len) {
 
 	uint16_t crc = calcCRC16ModBus(txFrame, len);
-	txFrame[len] = (crc >> 8) & 0xFF;  // CRC HIGH
+	txFrame[len] = (crc >> 8) & 0xFF;    // CRC HIGH
 	txFrame[len + 1] = crc & 0xFF;       // CRC LOW
 
 	HAL_GPIO_WritePin(enTXPinPort, enTXPinNumber, GPIO_PIN_SET);

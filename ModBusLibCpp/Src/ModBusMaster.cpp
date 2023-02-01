@@ -33,8 +33,8 @@ ModBusResult ModbusMaster::sendReadCoilsRequest(uint8_t slaveID,
 ModBusResult ModbusMaster::sendReadDiscInputsRequest(uint8_t slaveID,
 		uint16_t startingCoil, uint16_t offset) {
 
-	txFrame[0] = slaveID;  // Slave address
-	txFrame[1] = READ_DISC_INPUTs; // 0x02 Function code for Read Coils
+	txFrame[0] = slaveID;  					// Slave address
+	txFrame[1] = READ_DISC_INPUTs; 	// 0x02 Function code for Read Coils
 
 	txFrame[2] = (startingCoil >> 8) & 0xff;
 	txFrame[3] = startingCoil & 0xff;
