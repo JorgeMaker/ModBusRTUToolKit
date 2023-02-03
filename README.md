@@ -25,4 +25,3 @@ In order to test your application, a couple of Python scripts that act as Master
     + ModBusLibC      ------->   Library for C
     + ModBusLibCpp  -----> Library for C++
     + Test  ---------------> Python scripts for testing
-	  + Code Snippets -->  Examples and tips about this Library
